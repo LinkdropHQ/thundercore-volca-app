@@ -39,6 +39,9 @@ export function getNetworkNameById(networkId) {
     case "42":
 	networkName = "Kovan";
 	break;
+    case "108":
+	networkName = "ThunderCore";
+	break;	
     default:
 	networkName = `Unknown network`;
     }

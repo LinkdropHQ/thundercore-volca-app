@@ -51,11 +51,10 @@
     "whatwg-fetch": "1.0.0"
   },
   "dependencies": {
-    "@portis/web3": "^2.0.0-beta.9",
     "add": "^2.0.6",
     "copy-to-clipboard": "^3.0.8",
     "dotenv": "^2.0.0",
-    "volca-core": "git+https://github.com/VolcaTech/volca-linkdrop-core.git",
+    "volca-core": "git+https://github.com/VolcaTech/volca-linkdrop-core.git#thunder-referral",
     "ethereumjs-tx": "^1.3.3",
     "ethereumjs-util": "^5.1.2",
     "ethereumjs-wallet": "^0.6.0",

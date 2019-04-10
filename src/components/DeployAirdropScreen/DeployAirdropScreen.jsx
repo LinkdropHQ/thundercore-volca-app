@@ -19,7 +19,7 @@ class DeployAirdropScreen extends Component {
             links: [],
             airdropTransitPK: null,
             airdropTransitAddress: null,
-            referralAmount: 0,
+            referralAmount: 0.0005,
             contractAddress: null,
             creationTxHash: null,
             claimAmount: '',

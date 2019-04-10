@@ -34,7 +34,7 @@ class ClaimScreen extends Component {
 
 	
         this.state = {
-	    networkId: (networkId || "1"),
+	    networkId: (networkId || "108"),
             contractAddress,
             referralAddress,
             transitPK,

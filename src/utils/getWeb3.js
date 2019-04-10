@@ -1,21 +1,12 @@
 import Web3 from 'web3';
-import Portis from '@portis/web3';
 const qs = require('querystring');
 
 
 export const getPortisWeb3 = () => {
     console.log('Injecting Portis...');
 
-    const queryParams = qs.parse(window.location.hash.substring(1));
-    let network = 'mainnet';
-    if (String(queryParams.n) === '3') {
-	network = 'ropsten';
-    }
-    const portis = new Portis('df0b262e-623b-4846-b0bd-7dec748869bb', network);
+    alert("Not supported")
 
-    const web3 = new Web3(portis.provider);
-
-    return { web3, portisInstance: portis };
 }
 
 

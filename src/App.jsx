@@ -73,8 +73,7 @@ class App extends Component {
 		return this._renderNoWalletScreen();
             }
 	    
-            if (this.props.networkId != "3"
-		&& this.props.networkId != "1"
+            if (this.props.networkId != "108"
 	       ) {
 		   return this._renderWrongNetwork();
                }
