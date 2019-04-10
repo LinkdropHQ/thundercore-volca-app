@@ -8591,7 +8591,7 @@ vm-browserify@0.0.4:
 
 "volca-core@git+https://github.com/VolcaTech/volca-linkdrop-core.git#thunder-referral":
   version "0.4.0"
-  resolved "git+https://github.com/VolcaTech/volca-linkdrop-core.git#ea1b8b09f2fef1a981d69a7ef37d0f7e00e09c77"
+  resolved "git+https://github.com/VolcaTech/volca-linkdrop-core.git#a9d371d02bfbe8f5ed3031271b24df69c23f4941"
   dependencies:
     babel-plugin-add-module-exports "^0.2.1"
     babel-plugin-transform-object-rest-spread "^6.26.0"

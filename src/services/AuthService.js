@@ -8,8 +8,12 @@ const _getApiUrl = (networkId=1) => {
     let serverUrl;
     if (String(networkId) === '3') {
 	serverUrl = 'https://ropsten-air.eth2phone.com';
-    } else { 
+    } else if (String(networkId) === '1') {
 	serverUrl = 'https://mainnet-air.eth2phone.com';
+    } else if (String(networkId) === '108') {
+	serverUrl = 'https://thunder-mainnet-ref.eth2phone.com';
+    } else {
+	throw new Error("Unknown network: ", networkId)
     }
     return serverUrl;
 }
