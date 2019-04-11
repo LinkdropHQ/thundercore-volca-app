@@ -63,7 +63,7 @@ const ReceivingScreen = ({ transfer }) => {
                 </div>
                 <div style={styles.helpContainer}>
                     <div className="text">
-                        Details on <a className="link" href={etherscanLink}>Etherscan</a>
+                        Details on <a className="link" href={etherscanLink}>Thunderscan</a>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-const ETH2PHONE_HOST = 'https://eth2.io';
+
 
 
 
@@ -11,14 +11,11 @@ const shortHash = (hash, num, showEnd = true) => {
 
 export const getEtherscanLink= ({txHash, networkId, address}) => {
     let subdomain = '';
-    if (networkId == "3") {
-	subdomain = 'ropsten.';
-    }
     let etherscanLink;
     if (txHash) { 
-	 etherscanLink = `https://${subdomain}etherscan.io/tx/${txHash}`;
+	 etherscanLink = `https://scan.thundercore.com/transactions/${txHash}`;
     } else {
-	 etherscanLink = `https://${subdomain}etherscan.io/address/${address}`;
+	 etherscanLink = `https://scan.thundercore.com/address/${address}`;
     }
     return etherscanLink;
 }
