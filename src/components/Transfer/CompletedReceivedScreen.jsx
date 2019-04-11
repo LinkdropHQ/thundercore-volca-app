@@ -80,7 +80,7 @@ class CompletedReceivedScreen extends Component {
                             {transfer.txHash ?
                                 <div style={styles.helpContainer}>
                                     <div className="text">
-                                        Details on <a className="link" href={etherscanLink}>Etherscan</a>
+                                        Details on <a className="link" href={etherscanLink}>Thunderscan</a>
                                     </div>
                                 </div> : null}
 				

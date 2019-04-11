@@ -38,7 +38,7 @@ class CompletedReceivedScreen extends React.Component {
 	return (
             <div>
               <div style={{ width: 100, height: 100, display: 'flex', justifyContent: 'flex-end', margin: 'auto', marginTop: 80 }} >
-                <RetinaImage style={{ position: 'absolute' }} src={`https://raw.githubusercontent.com/Eth2io/eth2-assets/master/images/doge_token.png`} />
+                <RetinaImage style={{ position: 'absolute' }} height={100} width={100} src="https://raw.githubusercontent.com/TrustWallet/tokens/master/coins/1001.png" />
                 <RetinaImage style={{ position: 'relative', alignSelf: 'flex-end' }} src={`https://raw.githubusercontent.com/Eth2io/eth2-assets/master/images/plus_icon.png`} />
               </div>
               <div className="text-center">
@@ -84,9 +84,9 @@ const ClaimedScreenActionButton = ({ transfer, networkId='1' }) => {
 	const referralCode = Web3Utils.soliditySha3(transfer.contractAddress, transfer.receiverAddress);
 	
         const refLink = `${host}/#/auth?ref=${referralCode}`;
-	if (String(networkId) !== '1') {
-	    refLink += '&n=3';
-	}
+	// if (String(networkId) !== '1') {
+	//     refLink += '&n=3';
+	// }
 
         return (
             <div>

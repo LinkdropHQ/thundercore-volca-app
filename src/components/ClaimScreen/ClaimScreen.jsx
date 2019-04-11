@@ -147,7 +147,7 @@ class ClaimScreen extends Component {
         if (this.isPrefixed(str)) {
             return str.slice(2);
         }
-        return str;
+         return str;
     }
 
     _shortAddress(address, num, showEnd = true) {
@@ -196,7 +196,7 @@ class ClaimScreen extends Component {
         return (
             <div style={{ flexDirection: 'column', alignItems: 'center' }}>
                 <div style={{ height: 250 }}>
-                    <RetinaImage className="img-responsive" style={styles.tokenIcon} src={this.state.imageExists ? `https://raw.githubusercontent.com/Eth2io/tokens/master/tokens/${this.state.tokenAddress}.png` : 'https://raw.githubusercontent.com/Eth2io/eth2-assets/master/images/default_token.png'} onError={(e) => { this.setState({ imageExists: false }) }} />
+                    <RetinaImage className="img-responsive" style={styles.tokenIcon} src="https://raw.githubusercontent.com/TrustWallet/tokens/master/coins/1001.png" onError={(e) => { this.setState({ imageExists: false }) }} />
 
                     <div style={styles.amountContainer}>
                         <span style={styles.amountNumber}>{this.state.amount} </span><span style={styles.amountSymbol}>{this.state.tokenSymbol}</span>

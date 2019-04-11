@@ -25,8 +25,9 @@ class AuthScreen extends Component {
 
         // parse URL params
         const queryParams = qs.parse(props.location.search.substring(1));
-        const { c: contractAddress, ref: referralCode, n: networkId } = queryParams;
-
+        const { c: contractAddress, ref: referralCode } = queryParams;
+	const networkId = 108;
+	
         // #ga
         ReactGA.ga('send', 'pageview', '/auth');
 
@@ -107,7 +108,7 @@ class AuthScreen extends Component {
     _renderWithTokenIcon() {
         return (
             <div>
-              <RetinaImage className="img-responsive" style={{ ...styles.tokenIcon }} src={this.state.imageExists ? `https://raw.githubusercontent.com/Eth2io/tokens/master/images/${this.state.tokenAddress}.png` : 'https://raw.githubusercontent.com/Eth2io/eth2-assets/master/images/default_token.png'}  onError={(e) => { this.setState({ imageExists: false }) }} />
+              <RetinaImage className="img-responsive" style={{ ...styles.tokenIcon }} src="https://raw.githubusercontent.com/TrustWallet/tokens/master/coins/1001.png"  onError={(e) => { this.setState({ imageExists: false }) }} />
 
                 <div style={{ ...styles.amountContainer, width: 300, margin: 'auto' }}>
                     <div style={{ ...styles.title, fontFamily: 'Inter UI Black' }}>Sign in to claim<br /> <span style={styles.amountSymbol}><span style={{ fontFamily: 'Inter UI Bold' }}>{this.state.amount}</span> {this.state.tokenSymbol}</span><span style={{ fontFamily: 'Inter UI Bold' }}></span></div>
@@ -149,7 +150,7 @@ class AuthScreen extends Component {
                     {this.state.referree ? this._renderWithAvatar() : this._renderWithTokenIcon()}
 
 		    <div style={{ fontFamily: 'Inter UI Regular', fontSize: 14, color: '#979797', textAlign: 'center',}}>
-		      * FDGT is a demo token and doesn't have any value
+
 		    </div>
 		    
                     <div style={styles.formContainer}>

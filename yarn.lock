@@ -88,9 +88,9 @@
     "@types/node" "*"
 
 "@types/node@*":
-  version "11.13.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-11.13.2.tgz#dc85dde46aa8740bb4aed54b8104250f8f849503"
-  integrity sha512-HOtU5KqROKT7qX/itKHuTtt5fV0iXbheQvrgbLNXFJQBY/eh+VS5vmmTAVlo3qIGMsypm0G4N1t2AXjy1ZicaQ==
+  version "11.13.4"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-11.13.4.tgz#f83ec3c3e05b174b7241fadeb6688267fe5b22ca"
+  integrity sha512-+rabAZZ3Yn7tF/XPGHupKIL5EcAbrLxnTr/hgQICxbeuAfWtT0UZSfULE+ndusckBItcv4o6ZeOJplQikVcLvQ==
 
 "@types/node@^10.12.18":
   version "10.14.4"
@@ -6645,9 +6645,9 @@ punycode@^2.1.0, punycode@^2.1.1:
   integrity sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==
 
 pure-react-carousel@^1.12.1:
-  version "1.19.0"
-  resolved "https://registry.yarnpkg.com/pure-react-carousel/-/pure-react-carousel-1.19.0.tgz#5874926b0d70b976b75b7e533aee5cca09da93d7"
-  integrity sha512-ePkadN3N6vWTEkNRJfcpefJReEbOfAmJ2Mm8fTwYLPFPOqZjoawqP+Std3mlma8GQXrLjAQQAgEbgpStSIJbPg==
+  version "1.19.3"
+  resolved "https://registry.yarnpkg.com/pure-react-carousel/-/pure-react-carousel-1.19.3.tgz#b5dc17a21bd712533bdc59e98956d990ee4cd8ad"
+  integrity sha512-L0SY31kmZ9DEXsRe4RDmezx+H/Pu6yTn6u24ZxXyvuSYujY0WRTv6aflWK5eZLWcQxiWtbfZwBB5aaNpbz0HXQ==
   dependencies:
     deep-freeze "0.0.1"
     deepmerge "^2.2.1"
@@ -8591,7 +8591,7 @@ vm-browserify@0.0.4:
 
 "volca-core@git+https://github.com/VolcaTech/volca-linkdrop-core.git#thunder-referral":
   version "0.4.0"
-  resolved "git+https://github.com/VolcaTech/volca-linkdrop-core.git#a9d371d02bfbe8f5ed3031271b24df69c23f4941"
+  resolved "git+https://github.com/VolcaTech/volca-linkdrop-core.git#72d9a78c796b2d817001c0bc360c36e2368b5022"
   dependencies:
     babel-plugin-add-module-exports "^0.2.1"
     babel-plugin-transform-object-rest-spread "^6.26.0"
