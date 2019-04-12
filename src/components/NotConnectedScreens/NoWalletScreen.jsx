@@ -136,18 +136,7 @@ class NoWalletScreen extends Component {
 
     
     _renderSlider() {
-	if (!this.state.showSlider) { return null; }  
-	return (
-	    <div>
-              {
-                  this.state.showCarousel ?
-                      <WalletSlider selectWallet={this._selectWallet.bind(this)} selectedWallet={this.state.selectedWallet} /> :
-
-                          <div style={styles.anotherWallet} onClick={() => this.setState({ showCarousel: true, showInstruction: false })}>Have another wallet?</div>
-			  }
-
-	    </div>
-	);
+	return null;
     }
 
     _renderWithoutDeepLink(link) {
@@ -168,11 +157,6 @@ class NoWalletScreen extends Component {
                         }}
                         textColor='#0078FF' buttonColor="rgba(0, 153, 255, 0.2)" className="light-blue-button">Copy Link</ButtonPrimary>
                 </div>
-                {
-                    this.state.showCarousel === true ?
-                        <WalletSlider selectWallet={this._selectWallet.bind(this)} selectedWallet={this.state.selectedWallet} /> :
-                        <div style={styles.anotherWallet} onClick={() => this.setState({ showCarousel: true, showInstruction: false })}>Have another wallet?</div>
-                }
             </div>
         );
     }
@@ -192,12 +176,6 @@ class NoWalletScreen extends Component {
                 <div>
                     <div><img src={'https://raw.githubusercontent.com/Eth2io/eth2-assets/master/images/attention_icon.png'} style={styles.largeWalletIcon} /></div>
                     <div style={{ ...styles.title }}>You need a wallet to<br />claim tokens</div>
-
-		    <div style={styles.buttonRow}>
-                      <a className="hover" style={{ ...styles.button, backgroundColor: '#6CB3DB', borderColor: '#6CB3DB' }} onClick={this._openPortisModal.bind(this)}>
-		        {this.state.fetchingPortis ? <ButtonLoader /> : "Use Portis"}
-		      </a>
-                    </div>
 		    
                     <div style={styles.buttonRow}>
                         <a href="https://metamask.io/" style={{ ...styles.button, backgroundColor: '#f5a623', borderColor: '#f5a623' }} target="_blank">Use Metamask</a>
